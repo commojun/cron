@@ -1,4 +1,4 @@
 #!/bin/bash
 
-crontab /crontab
+crontab $CRONTAB_FILE
 cron -f

@@ -21,6 +21,6 @@ shell:
 buildx:
 	docker buildx build \
 		-t commojun/cron:latest \
-		--platform linux/amd64,linux/arm/v7,linux/arm/v6 \
+		--platform linux/amd64,linux/arm64,linux/arm/v7,linux/arm/v6 \
 		--push \
 		.

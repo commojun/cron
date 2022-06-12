@@ -5,6 +5,8 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
+    environment:
+      CRONTAB_FILE: /crontab
     restart: always
     volumes:
       - ./crontab:/crontab
