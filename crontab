@@ -1,1 +1,3 @@
+TZ=Asia/Tokyo
+
 * * * * * date > /proc/1/fd/1 2>&1
