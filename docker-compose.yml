@@ -1,0 +1,14 @@
+version: "3"
+services:
+  cron:
+    image: commojun/cron:latest
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    restart: always
+    volumes:
+      - ./crontab:/crontab
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "3"
