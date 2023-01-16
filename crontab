@@ -1,3 +1,4 @@
 TZ=Asia/Tokyo
+SHELL=/bin/bash
 
 * * * * * date > /proc/1/fd/1 2>&1
