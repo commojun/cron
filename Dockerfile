@@ -8,6 +8,9 @@ RUN apt-get update && \
 # タイムゾーン設定
 ENV TZ=Asia/Tokyo
 
+# crontab設定ファイル
+ENV CRONTAB_FILE=/crontab
+
 COPY ./run.sh /run.sh
 
 CMD ["/run.sh"]
